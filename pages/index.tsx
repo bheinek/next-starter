@@ -10,6 +10,8 @@ const Home: NextPage = () => {
     title: 'Harry Potter',
   });
 
+  // You should see this data output in the browser console, which means that the data is being fetched on the client-side
+  // as opposed to the server-side
   console.log(data?.Actors);
 
   return (
