@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 import apiClient from './api';
-import { Film } from './types';
+import { FilmResponse } from './types';
 
 export const findFilmByTitleRequest = async (title: string) => {
-  return apiClient.get<Film>('http://www.omdbapi.com', {
+  return apiClient.get<FilmResponse>('http://www.omdbapi.com', {
     params: { t: title },
   });
 };

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
   // You should see this data output in the browser console, which means that the data is being fetched on the client-side
   // as opposed to the server-side
-  console.log(data?.Actors);
+  console.log(data);
 
   return (
     <div className={styles.container}>
