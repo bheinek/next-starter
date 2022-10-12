@@ -3,7 +3,7 @@ export type Rating = {
   Value: string;
 };
 
-export type Film = {
+export type FilmResponse = {
   Title: string;
   Year: string;
   Rated: string;
