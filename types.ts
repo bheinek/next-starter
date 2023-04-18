@@ -3,6 +3,20 @@ export type Rating = {
   Value: string;
 };
 
+export type FilmCard = {
+  Poster: string;
+  Title: string;
+  Type: string;
+  Year: string;
+  imdbID: string;
+};
+
+export type SearchResponse = {
+  Response: boolean;
+  Search: FilmCard[];
+  totalResults: string;
+};
+
 export type FilmResponse = {
   Title: string;
   Year: string;
